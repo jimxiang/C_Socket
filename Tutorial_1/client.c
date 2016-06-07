@@ -36,7 +36,7 @@ void main()
     // 定义要连接的服务端地址
     addrServer.sin_addr.S_un.S_addr = inet_addr("127.0.0.1"); // 目标IP (127.0.0.1是本机地址)
     addrServer.sin_family = AF_INET; // 协议类型是INET
-    addrServer.sin_port = htons(6000); // 连接端口1234
+    addrServer.sin_port = htons(6000); // 连接端口6000
 
     // 让 sockClient 连接到 服务端
     connect(sockClient, (SOCKADDR *)&addrServer, sizeof(SOCKADDR));
